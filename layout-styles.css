@@ -38,7 +38,8 @@
 
   .content {
     border: 1px solid #5f5f5f;
-    margin: 0px 5%;}
+    margin: 0px 5%;
+    min-width: 304px;}
   .content2 {
     margin: 0px 2%;}
 
