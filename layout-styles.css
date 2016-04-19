@@ -1,4 +1,6 @@
   body {
+    width: 90%;
+    margin: 0px 5% 5% 5%;
     font-family: "Segoe UI", Arial, Verdana, sans-serif;
     color: #5f5f5f;}
 
@@ -6,12 +8,6 @@
     margin-bottom: 20px;
     font-size: 1.2em;}
 
-  img.logo {
-    margin-left: 5%;}
-
-  .navdiv {
-    width: 90%;
-    margin: 0px 5%;}
   .nav {
     background-color: #5f5f5f;
     font-size: 1.5em;
@@ -38,7 +34,7 @@
 
   .content {
     border: 1px solid #5f5f5f;
-    margin: 0px 5% 5% 5%;
+    margin-bottom: 5%;
     min-width: 304px;}
   .content2 {
     margin: 0px 2%;}
@@ -46,7 +42,7 @@
   .warningborder {
     border: 4px dashed red;
     background-color: #f69220;
-    margin: 0px 5% 10px 5%;
+    margin-bottom: 10px;
     clear: both;}
     .warningdiv {
       padding: 20px 0px;
