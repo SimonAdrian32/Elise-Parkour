@@ -1,3 +1,6 @@
+  * {
+    box-sizing: border-box;
+  }
   body {
     width: 90%;
     margin: 0px 5% 5% 5%;
@@ -7,6 +10,15 @@
   p {
     margin-bottom: 20px;
     font-size: 1.2em;}
+
+  div {
+    border-radius: 5px;}
+  
+  @media only screen and (max-width: 500px) {
+    .nav-li {
+      width: 400px;
+    }
+  }
 
   .nav {
     background-color: #5f5f5f;
@@ -18,8 +30,8 @@
     margin: 0px 0px 1% 0px;
     border-top: 1px solid #5f5f5f;
     border-bottom: 1px solid #5f5f5f;
-    min-width: 286px;
-    }
+    min-width: 400px;
+    border-radius: 5px; }
   .nav-li {
     display: inline-block;
     margin: 10px 0px;}
@@ -27,7 +39,8 @@
     padding: 10px;
     background-color: #5f5f5f;
     color: #f69220;
-    text-decoration: none;}
+    text-decoration: none;
+    border-radius: 5px;}
     .nav-link:hover {
       background-color: #f69220;
       color: #5f5f5f;}
@@ -37,7 +50,7 @@
     margin-bottom: 5%;
     min-width: 304px;}
   .content2 {
-    margin: 0px 2%;}
+    margin: 0px 2% 2% 2%;}
 
   .warningborder {
     border: 4px dashed red;
