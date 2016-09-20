@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link rel="stylesheet" href="layout-styles.css" type="text/css" />
   	<link rel="icon" type="image/x-icon" href="pics/thumbnail-transparent.png">
+  	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><!-- used for icons -->
+    <script src="tests.js"></script>
   	<style>
   	  .frontdiv {
   	    margin: 0px auto;}
@@ -45,18 +47,24 @@
         .fb-page {
     margin: 5% 5% 5% 10%;
     border: 2px solid #5f5f5f;}
+  .icoon {
+  	color: #f69220;
+  	font-size: 36px;
+  	padding: 10px;}
+  .icoon:hover {
+  	color: #5f5f5f;}
   	</style>
   </head>
   
-  <body>
-    <div id="fb-root"></div>
+  <body> 
+    <!-- <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_PI/sdk.js#xfbml=1&version=v2.5";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));</script> -->
     <a class="logo" href="http://www.eliseparkour.com">
       <img class="logo" 
       src="pics/logo.png"
@@ -65,6 +73,9 @@
       height="100px">
     </a>
     <div class="navdiv">
+    <button type="button" class="nav-button" onclick="document.getElementById('nav').style.display='block'">
+    	<i class="fa fa-bars icoon"></i>
+    </button>
     <ul class="nav">
       <li class="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
       <li class="nav-li"><a class="nav-link" href="what-is-parkour.html">What is parkour</a></li>
@@ -75,9 +86,9 @@
     </ul>
     </div>
     <img class="cover" 
-    src="pics/frontcopy.jpg"
+    src="pics/main.jpg"
     alt="cover"
-    style="width: 100%; height: 33.3%;">
+    style="width: 80%; height: 33.3%; margin:0px auto;">
     <div class="content">
       <div class="info">
         <h2 class="info-header">Current Season</h2>
@@ -101,7 +112,7 @@
             <p class="info-text">8</p>
           </div>
       </div>
-      <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+      <!--<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div> -->
     </div><!-- end of content -->
   </body>
 </html>
