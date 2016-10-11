@@ -1,7 +1,7 @@
   * {
     box-sizing: border-box;
-    /* border: 1px solid red; */
-  }
+    /* border: 1px solid red; */}
+  
   body {
     width: 90%;
     margin: 0px 5% 5% 5%;
@@ -15,11 +15,25 @@
   div {
     border-radius: 5px;}
   
-  @media only screen and (max-width: 500px) {
-    .nav-li {
-      width: 400px;
-    }
+  @media only screen and (max-width: 768px) {
+    #nav-li {
+      display: block;
+      padding-bottom: 10px;
+      min-width: 238.03px;}
+    .nav-content {
+      display: none;}
   }
+  @media only screen and (min-width: 769px) {
+    .nav-button {
+      display: none;}
+  }
+  @media only screen and (min-width: 461px) { /* 461px for pages with scroll bar, 445 for pages without */
+  .logo {
+    width: 400px;}
+  }
+
+  img, iframe {
+    -webkit-user-select: none;}
 
   .navdiv {
     background-color: #5f5f5f;
@@ -31,8 +45,10 @@
     margin: 0px 0px 1% 0px;
     border-top: 1px solid #5f5f5f;
     border-bottom: 1px solid #5f5f5f;
-    min-width: 400px;
-    border-radius: 5px;}
+    border-radius: 5px;
+    -webkit-user-select: none;}
+  .nav-content {
+    padding: 0px;}
   .nav-button {
     background-color: #5f5f5f;
     border: 2px solid #f69220;
@@ -40,27 +56,31 @@
     cursor: pointer;}
     .nav-button:hover {
       background-color: #f69220;}
-  .nav {
-    display: none;}
-  .nav-li {
-    display: inline-block;
-    margin: 10px 0px;}
-  .nav-link {
-    padding: 10px;
-    background-color: #5f5f5f;
-    color: #f69220;
-    text-decoration: none;
-    border-radius: 5px;}
-    .nav-link:hover {
-      background-color: #f69220;
-      color: #5f5f5f;
+    .burger {
+      color: #f69220;
+      font-size: 36px;
+      padding: 10px;}
+      .burger:hover {
+        color: #5f5f5f;}
+    .nav-li {
+      display: inline-block;
+      margin: 10px 0px;}
+    .nav-link {
+      padding: 10px;
+      background-color: #5f5f5f;
+      color: #f69220;
+      text-decoration: none;
+      border-radius: 5px;}
+      .nav-link:hover {
+        background-color: #f69220;
+        color: #5f5f5f;}
 
   .content {
     border: 1px solid #5f5f5f;
     margin-bottom: 5%;
     min-width: 304px;}
-  .content2 {
-    margin: 0px 2% 2% 2%;}
+    .content2 {
+      margin: 0px 2% 2% 2%;}
 
   .warningborder {
     border: 4px dashed red;
@@ -73,4 +93,4 @@
       background-color: #fff;
       text-align: center;}
       .warningtext {
-        margin: 0px;  }
+        margin: 0px;}

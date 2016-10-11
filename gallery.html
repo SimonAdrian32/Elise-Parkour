@@ -2,66 +2,99 @@
 
 <html>
   <head>
-	<title>Gallery - Elise Parkour</title>
+	  <title>Gallery - Elise Parkour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link rel="stylesheet" href="layout-styles.css" type="text/css" />
     <script src="tests.js"></script>
-    <link rel="icon" type="image/x-icon" href="pics/thumbnail.png">
+    <link rel="icon" type="image/x-icon" href="pics/thumbnail-transparent.png">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><!-- used for icons -->
     <style>
-
-    .session {
-      width: 200px;
-      height: 150px;
-      border: 1px solid #5f5f5f;
-      text-align: center;
-    }
-    .session-link {
-      color: #5f5f5f;
-      text-decoration: none;
-    }
-    .session-link:hover {
-      text-decoration: underline;
-    }
+      .session {
+        width: 200px;
+        height: 170px;
+        border: 1px solid #5f5f5f;
+        text-align: center;
+        margin: 2% 2% 2% 0px;
+        display: inline-block;}
+        .session-link {
+          color: #5f5f5f;
+          text-decoration: none;}
+          .session-link:hover {
+            text-decoration: underline;}
+      .burger {
+        color: #f69220;
+        font-size: 36px;
+        padding: 10px;}
+        .burger:hover {
+          color: #5f5f5f;}
+      .show {
+        display: block;}
     </style>
+    <script>
+      function showNav() {
+        document.getElementById("nav").classList.toggle("show");}
+    </script>
   </head>
   <body>
     <a class="logo" href="http://www.eliseparkour.com">
       <img class="logo" 
-      src="pics/logo.png"
-      alt="logo"
-      width="400px"
-      height="100px">
+           src="pics/logo.png"
+           alt="logo"
+           width="100%"
+           height="100px">
     </a>
-    <ul class="nav">
-      <li class="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
-      <li class="nav-li"><a class="nav-link" href="what-is-parkour.html">What is parkour</a></li>
-      <li class="nav-li"><a class="nav-link" href="class-info.html">Class info</a></li>
-      <li class="nav-li"><a class="nav-link" href="team-profiles.html">Team Profiles</a></li>
-      <li class="nav-li"><a class="nav-link" href="gallery.html">Gallery</a></li>
-      <li class="nav-li"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-    <br />
-
-    <div class="content" id="main">
-      <div class="content2" style="text-align:left;">
-      <h1>Gallery</h1>
-      <p>Here are the sessions which have been documented. Click on a thumbnail to enter a slideshow of the pictures of that session. All pictures are free to download and use for own purposes.</p>
-      <br>
+    <div class="navdiv">
+      <button type="button" class="nav-button" onclick="showNav()">
+        <i class="fa fa-bars burger"></i>
+      </button>
+      <ul id="nav" class="nav-content">
+        <li class="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
+        <li class="nav-li"><a class="nav-link" href="what-is-parkour.html">What is parkour</a></li>
+        <li class="nav-li"><a class="nav-link" href="class-info.html">Class info</a></li>
+        <li class="nav-li"><a class="nav-link" href="team-profiles.html">Team Profiles</a></li>
+        <li class="nav-li"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-li"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="content2">
+        <h1>Gallery</h1>
+        <p>Here are the sessions which have been documented. Click on a thumbnail to enter a slideshow of the pictures of that session. All pictures are free to download and use for own purposes.</p>
+        <br />
         <div class="sessions">
-          <div class="session">
-          <a class="session-link" href="gallery-entries/10-05-2016.html">
-            <img src="pics/gallery-pics/10-05-2016/IMG_20160510_162145_008.jpg" alt="thumbnail" style="width:190px; padding:5px">
-          </a>
-          <a class="session-link" href="gallery-entries/10-05-2016.html">
-            <b>May 10, 2016 (29 pics)</b>
-          </a>
+  
+          <!-- vv 10-05-2016 vv -->
+          <div class="session left">
+            <a class="session-link" href="gallery-entries/10-05-2016.html" target="_blank">
+              <img src="pics/gallery-pics/10-05-2016/IMG_20160510_162145_008.jpg" alt="thumbnail" style="width:190px; padding:5px">
+            </a>
+            <a class="session-link" href="gallery-entries/10-05-2016.html" target="_blank">
+              <b>May 10, 2016<br />(29 pics)</b>
+            </a>
           </div>
+  
+          <!-- vv 30-08-2016 vv -->
+          <div class="session">
+            <a class="session-link" href="gallery-entries/30-08-2016.html" target="_blank">
+              <img src="pics/gallery-pics/30-08-2016/IMG_20160830_154939_006.jpg" alt="thumbnail" style="width:190px; padding:5px">
+            </a>
+            <a class="session-link" href="gallery-entries/30-08-2016.html" target="_blank">
+              <b>August 30, 2016<br />(11 pics)</b>
+            </a>
+          </div>
+
+          <!-- vv 27-09-2016 vv -->
+          <div class="session">
+            <a class="session-link" href="gallery-entries/27-09-2016.html" target="_blank">
+              <img src="pics/gallery-pics/27-09-2016/IMG_20160927_154515.jpg" alt="thumbnail" style="width:190px; padding:5px">
+            </a>
+            <a class="session-link" href="gallery-entries/27-09-2016.html" target="_blank">
+              <b>September 27, 2016<br />(30 pics)</b>
+            </a>
+          </div>
+
         </div>
       </div>
-    </div>
-      
-
-
+    </div> <!-- end of content -->
   </body>
 </html>

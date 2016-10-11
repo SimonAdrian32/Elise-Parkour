@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-  <html>
+<html>
   <head>
     <title>Team Profiles - Elise Parkour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,41 +25,51 @@
           padding: 10px 15px 15px 15px;
           margin: 5px 5px 0px 5px;
           text-align: center;}
+        .mads {
+          height: 88px;}
+          .mads-profile {
+            height: 531px;}
         .august, .magnus {
           font-size: 1.25em;}
-        .samuel, .david {
+        .david {
           display: none;}
         img.pb {
           width: 290px;
           height: 230.188px;
           margin: 5px;}
-        .profile-text {
-          margin: 0px;}
         th, td {
           padding-left: 20px;}
         th {
           text-align: left;
           font-size: 1.17em;}
-
-
-
-
-
-
-        
-        }
+      .burger {
+        color: #f69220;
+        font-size: 36px;
+        padding: 10px;}
+        .burger:hover {
+          color: #5f5f5f;}
+      .show {
+        display: block;}
     </style>
+    <script>
+      function showNav() {
+        document.getElementById("nav").classList.toggle("show");}
+    </script>
   </head>
+  
   <body>
     <a class="logo" href="http://www.eliseparkour.com">
       <img class="logo" 
-      src="pics/logo.png"
-      alt="logo"
-      width="400px"
-      height="100px">
+           src="pics/logo.png"
+           alt="logo"
+           width="100%"
+           height="100px">
     </a>
     <div class="navdiv">
-      <ul class="nav">
+      <button type="button" class="nav-button" onclick="showNav()">
+        <i class="fa fa-bars burger"></i>
+      </button>
+      <ul id="nav" class="nav-content">
         <li class="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
         <li class="nav-li"><a class="nav-link" href="what-is-parkour.html">What is parkour</a></li>
         <li class="nav-li"><a class="nav-link" href="class-info.html">Class info</a></li>
@@ -70,278 +80,258 @@
     </div>
     <div class="content">
     <div class="content2" style="text-align:left;">
-    <h1>Team Profiles</h1>
-    <p>Only members who allowed their information to be exposed are displayed here.</p>
-    </div>
+      <h1>Team Profiles</h1>
+      <p>Only members who allowed their information to be exposed are displayed here.</p>
+    </div> <!-- end of content divs -->
+    <!-- profiles -->
+    <div class="profile mads-profile">
+      <h2 class="name mads">Mads Backer Schmidt (instructor)</h2>
+      <img src="pics/profiles/mads.jpg" alt="Mads Backer Schmidt" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>28 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>3 years ago</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"Never grow up, it's a trap."</td>
+        </tr>
+      </table>
+    </div><!-- end of mads -->
 
-      <div class="profile">
-        <h2 class="name">Mads Backer Schmidt</h2>
-        <img src="pics/profiles/mads.jpg" alt="Mads Backer Schmidt" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>28 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>3 years ago</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"Never grow up, it's a trap."</td>
-          </tr>
-        </table>
-      </div><!-- end of mads -->
+    <div class="profile">
+      <h2 class="name august">August Hegestand-Sverdlin</h2>
+      <img src="pics/profiles/augustSH.jpg" alt="August Hegestand-Sverdlin" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>15 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>2 years ago</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"Someone gives you food, you take it."</td>
+        </tr>
+      </table>
+    </div><!-- end of august -->
 
-      <div class="profile">
-        <h2 class="name august">August Hegestand-Sverdlin</h2>
-        <img src="pics/profiles/augustSH.jpg" alt="August Hegestand-Sverdlin" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>15 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>2 years ago</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"Someone gives you food, you take it."</td>
-          </tr>
-        </table>
-      </div><!-- end of august -->
+    <div class="profile">
+      <h2 class="name">Simon Adrian</h2>
+      <img src="pics/profiles/simonSH.JPG" alt="Simon Adrian" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>15 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>2 years ago</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"When nothing goes right - go left."</td>
+        </tr>
+      </table>
+    </div><!-- end of simon -->
 
-      <div class="profile">
-        <h2 class="name">Simon Adrian</h2>
-        <img src="pics/profiles/simonSH.JPG" alt="Simon Adrian" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>15 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>2 years ago</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"When nothing goes right - go left."</td>
-          </tr>
-        </table>
-      </div><!-- end of simon -->
+    <div class="profile">
+      <h2 class="name">Tobias Schou Hinge</h2>
+      <img src="pics/profiles/tobiasSH.jpg" alt="Tobias Schou Hinge" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>12 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>1 year</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"Let people laugh with you and not at you"</td>
+        </tr>
+      </table>
+    </div><!-- end of tobias -->
 
-      <div class="profile samuel">
-        <h2 class="name">Samuel Nielsen</h2>
-        <img src="pics/profiles/samuelSH.jpg" alt="Samuel Nielsen" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>14 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>2 years ago</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"something cool"</td>
-          </tr>
-        </table>
-      </div><!-- end of samuel -->
+    <div class="profile">
+      <h2 class="name">Harald Hvidlykke</h2>
+      <img src="pics/profiles/haraldSH.jpg" alt="Harald Hvidlykke" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>14 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>2 years</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"Don't let your memes be dreams"</td>
+        </tr>
+      </table>
+    </div><!-- end of Harald -->
 
-      <div class="profile">
-        <h2 class="name">Tobias Schou Hinge</h2>
-        <img src="pics/profiles/tobiasSH.jpg" alt="Tobias Schou Hinge" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>12 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>1 year</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"Let people laugh with you and not at you"</td>
-          </tr>
-        </table>
-      </div><!-- end of tobias -->
-      <div class="profile">
-        <h2 class="name">Harald Hvidlykke</h2>
-        <img src="pics/profiles/haraldSH.jpg" alt="Harald Hvidlykke" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>14 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>2 years</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"Don't let your memes be dreams"</td>
-          </tr>
-        </table>
-      </div><!-- end of Harald -->
-      <div class="profile">
-        <h2 class="name">Emil Birk Bidstrup</h2>
-        <img src="pics/profiles/emilSH.jpg" alt="Emil Birk Bidstrup" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>11 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>2 years</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"Love your dreams"</td>
-          </tr>
-        </table>
-      </div><!-- end of emil -->
-      <div class="profile">
-        <h2 class="name magnus">Magnus Waagoe Larsen</h2>
-        <img src="pics/profiles/magnusSH.jpg" alt="Magnus Waagoe Larsen" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>11 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>2 years</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"I'm too lazy to make up a quote"</td>
-          </tr>
-        </table>
-      </div><!-- end of magnus -->
-      <div class="profile">
-        <h2 class="name">Vitus Guldager</h2>
-        <img src="pics/profiles/vitusSH.jpg" alt="Vitus Guldager" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>11 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>1 year</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"Jump or die"</td>
-          </tr>
-        </table>
-      </div><!-- end of vitus -->
-      <div class="profile">
-        <h2 class="name">Eskild Visti Rasmussen</h2>
-        <img src="pics/profiles/eskildSH.jpg" alt="Eskild Visti Rasmussen" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>11 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>1 year</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"#ripharambe"</td>
-          </tr>
-        </table>
-      </div><!-- end of eskild -->
-      <div class="profile david">
-        <h2 class="name">David Blum</h2>
-        <img src="pics/profiles/davidSH.jpg" alt="David Blum" class="pb">
-        <table>
-          <tr>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>11 years</td>
-          </tr>
-          <tr>
-            <th>Time of participation</th>
-          </tr>
-          <tr>
-            <td>2 year</td>
-          </tr>
-          <tr>
-            <th>Quote</th>
-          </tr>
-          <tr>
-            <td>"Don't let other people live your life"</td>
-          </tr>
-        </table>
-      </div><!-- end of david -->
-    </div><!-- end of content -->
+    <div class="profile">
+      <h2 class="name">Emil Birk Bidstrup</h2>
+      <img src="pics/profiles/emilSH.jpg" alt="Emil Birk Bidstrup" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>11 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>2 years</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"Love your dreams"</td>
+        </tr>
+      </table>
+    </div><!-- end of emil -->
+
+    <div class="profile">
+      <h2 class="name magnus">Magnus Waagoe Larsen</h2>
+      <img src="pics/profiles/magnusSH.jpg" alt="Magnus Waagoe Larsen" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>11 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>2 years</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"I'm too lazy to make up a quote"</td>
+        </tr>
+      </table>
+    </div><!-- end of magnus -->
+
+    <div class="profile">
+      <h2 class="name">Vitus Guldager</h2>
+      <img src="pics/profiles/vitusSH.jpg" alt="Vitus Guldager" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>11 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>1 year</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"Jump or die"</td>
+        </tr>
+      </table>
+    </div><!-- end of vitus -->
+
+    <div class="profile">
+      <h2 class="name">Eskild Visti Rasmussen</h2>
+      <img src="pics/profiles/eskildSH.jpg" alt="Eskild Visti Rasmussen" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>11 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>1 year</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"#ripharambe"</td>
+        </tr>
+      </table>
+    </div><!-- end of eskild -->
+
+    <div class="profile david">
+      <h2 class="name">David Blum</h2>
+      <img src="pics/profiles/davidSH.jpg" alt="David Blum" class="pb">
+      <table>
+        <tr>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>11 years</td>
+        </tr>
+        <tr>
+          <th>Time of participation</th>
+        </tr>
+        <tr>
+          <td>2 year</td>
+        </tr>
+        <tr>
+          <th>Quote</th>
+        </tr>
+        <tr>
+          <td>"Don't let other people live your life"</td>
+        </tr>
+      </table>
+    </div><!-- end of david -->
   </body>
 </html>

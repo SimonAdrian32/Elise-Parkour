@@ -5,51 +5,92 @@
     <title>Contact - Elise Parkour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout-styles.css" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="pics/thumbnail.png">
+    <link rel="icon" type="image/x-icon" href="pics/thumbnail-transparent.png">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> <!-- used for icons -->
     <style>
-    .ess {
-      border: 2px solid #5f5f5f;}
-    .ess-text {
-      margin-left: 15px;}
-    h2 {
-      background-color: #f69220;
-      padding: 10px;
-      margin: 5px;}
-    iframe {
-      float: right;
-      margin-right: 5px;
-      min-width: 286px;}
+      .ess {
+        border: 2px solid #5f5f5f;
+        overflow: hidden;}
+        .ess-text {
+          margin-left: 15px;
+          width: 50%;
+          display: inline-block;}
+      h2 {
+        background-color: #f69220;
+        padding: 10px;
+        margin: 5px;}
+      iframe {
+        margin-right: 5px;
+        max-width: 1000px;
+        min-width: 286px;
+        display: block;
+        padding: 10px;
+        display: inline-block;}
+        @media only screen and (min-width: 880px) {
+          iframe {
+            position: absolute;
+            float: right;
+            right: 10%;
+            width: 50%;}
+        }
+      .burger {
+        color: #f69220;
+        font-size: 36px;
+        padding: 10px;}
+        .burger:hover {
+          color: #5f5f5f;}
+      .show {
+        display: block;}
     </style>
+    <script>
+      function showNav() {
+    document.getElementById("nav").classList.toggle("show");}
+    </script>
   </head>
-  
   <body>
     <a class="logo" href="http://www.eliseparkour.com">
       <img class="logo" 
-      src="pics/logo.png"
-      alt="logo"
-      width="400px"
-      height="100px">
+           src="pics/logo.png"
+           alt="logo"
+           width="100%"
+           height="100px">
     </a>
     <div class="navdiv">
-    <ul class="nav">
-      <li class="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
-      <li class="nav-li"><a class="nav-link" href="what-is-parkour.html">What is parkour</a></li>
-      <li class="nav-li"><a class="nav-link" href="class-info.html">Class info</a></li>
-      <li class="nav-li"><a class="nav-link" href="team-profiles.html">Team Profiles</a></li>
-      <li class="nav-li"><a class="nav-link" href="gallery.html">Gallery</a></li>
-      <li class="nav-li"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
+      <button type="button" class="nav-button" onclick="showNav()">
+        <i class="fa fa-bars burger"></i>
+      </button>
+      <ul id="nav" class="nav-content">
+        <li class="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
+        <li class="nav-li"><a class="nav-link" href="what-is-parkour.html">What is parkour</a></li>
+        <li class="nav-li"><a class="nav-link" href="class-info.html">Class info</a></li>
+        <li class="nav-li"><a class="nav-link" href="team-profiles.html">Team Profiles</a></li>
+        <li class="nav-li"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-li"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
     <div class="content">
       <div class="content2">
+        <h1>Contact</h1>
         <p>This parkour team is administrated by Elise Puls, a project initiated by Elise Smith School.</p>
-        <p>Link to Elise Puls' page: <a href="elisepuls.dk">elisepuls.dk</a> </p>
+        <p>Link to Elise Puls' page: <a href="http://elisepuls.dk">www.elisepuls.dk</a> </p>
         <div class="ess">
           <h2>Info about Elise Smith School</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.7986449408!2d10.200859415465722!3d56.16058596793511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f951ca160af%3A0xc490cf5bdb14a90d!2sElise+Smiths+Skole!5e0!3m2!1sda!2sdk!4v1461674430515" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.7986449408!2d10.200859415465722!3d56.16058596793511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f951ca160af%3A0xc490cf5bdb14a90d!2sElise+Smiths+Skole!5e0!3m2!1sda!2sdk!4v1461674430515"  height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
           <div class="ess-text">
-          <p>Adress:<br />Ny Munkegade 13<br />8000 Aarhus C, Denmark</p>
+            <p><b>Adress:</b><br />Ny Munkegade 13<br />8000 Aarhus C, Denmark</p>
+            <p><b>TEL:</b> +45 86 12 25 77</p>
+            <p><b>FAX:</b> 86 12 95 98</p>
+            <p><b>E-mail:</b> <a href="mailto:kontoret@ess-aarhus.dk">kontoret@ess-aarhus.dk</a></p>
+            <p><b>Website:</b> <a href="http://www.ess-aarhus.dk">www.ess-aarhus.dk</a></p>
+            <p style="-webkit-user-select:none">&nbsp;</p>
+            <p style="-webkit-user-select:none">&nbsp;</p>
+            <p style="-webkit-user-select:none">&nbsp;</p>
+            <p style="-webkit-user-select:none">&nbsp;</p>
           </div>
+        </div>
+        <div class="credit">
+          <p>This website is created and maintained by Simon Adrian.</p>
+          <p>mail: <a href="mailto:nn32DK@gmail.com">nn32DK@gmail.com</a></p>
         </div>
       </div>  
     </div> <!-- end of content divs -->
