@@ -20,10 +20,13 @@
       display: block;
       padding-bottom: 10px;
       min-width: 238.03px;}
-    .nav-content {
-      display: none;}
+    .navdiv {
+      height: 102px;
+      overflow: hidden;}
   }
   @media only screen and (min-width: 769px) {
+    .navdiv {
+      max-height: 174px;}
     .nav-button {
       display: none;}
   }
@@ -46,22 +49,56 @@
     border-top: 1px solid #5f5f5f;
     border-bottom: 1px solid #5f5f5f;
     border-radius: 5px;
-    -webkit-user-select: none;}
+    -webkit-user-select: none;
+    transition: 0.4s;}
   .nav-content {
     padding: 0px;}
+  .nav-button {
+        width: 70px;
+        height: 80px;}
+    .burger {
+      display: inline-block;
+      width: 36px;
+      height: 6px;
+      background-color: #f69220;
+      font-size: 36px;
+      position: relative;
+      border-radius: 3px;
+      top: 0px;
+      transform: rotate(0deg);
+      transition: 0.4s;}
+      .open1-1 {
+        top: 15px;
+        transition: 0.2s;}
+      .open1-2 {
+        transform: rotate(45deg);
+        width: 50px;
+        transition: 0.2s;}
+      .open2-1 {
+        visibility: hidden;
+        transition: 0.2s;}
+      .open3-1 {
+        top: -15px;
+        transition: 0.2s;}
+      .open3-2 {
+        transform: rotate(-45deg);
+        width: 50px;
+        transition: 0.2s;}
+      .show {
+        height: 452px;
+        transition: 0.4s;}
   .nav-button {
     background-color: #5f5f5f;
     border: 2px solid #f69220;
     border-radius: 5px;
-    cursor: pointer;}
+    cursor: pointer;
+    transition: 0.4s;}
     .nav-button:hover {
-      background-color: #f69220;}
-    .burger {
-      color: #f69220;
-      font-size: 36px;
-      padding: 10px;}
-      .burger:hover {
-        color: #5f5f5f;}
+      background-color: #f69220;
+      transition: 0.4s;}
+    .nav-button:hover > .burger {
+      background-color: #5f5f5f;
+    }
     .nav-li {
       display: inline-block;
       margin: 10px 0px;}

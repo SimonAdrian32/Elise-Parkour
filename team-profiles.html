@@ -53,7 +53,14 @@
     </style>
     <script>
       function showNav() {
-        document.getElementById("nav").classList.toggle("show");}
+        document.getElementById("navdiv").classList.toggle("show");
+        document.getElementById("layer1").classList.toggle('open1-1');
+        document.getElementById("layer2").classList.toggle('open2-1');
+        document.getElementById("layer3").classList.toggle('open3-1');
+        setTimeout(function(){
+        document.getElementById('layer1').classList.toggle('open1-2');
+        document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+      }
     </script>
   </head>
   
@@ -65,17 +72,19 @@
            width="100%"
            height="100px">
     </a>
-    <div class="navdiv">
+    <div class="navdiv" id="navdiv">
       <button type="button" class="nav-button" onclick="showNav()">
-        <i class="fa fa-bars burger"></i>
+        <span class="burger" id="layer1"></span>
+        <span class="burger" id="layer2"></span>
+        <span class="burger" id="layer3"></span>
       </button>
       <ul id="nav" class="nav-content">
-        <li class="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
-        <li class="nav-li"><a class="nav-link" href="what-is-parkour.html">What is parkour</a></li>
-        <li class="nav-li"><a class="nav-link" href="class-info.html">Class info</a></li>
-        <li class="nav-li"><a class="nav-link" href="team-profiles.html">Team Profiles</a></li>
-        <li class="nav-li"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-li"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="what-is-parkour.html">What is parkour</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="class-info.html">Class info</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="team-profiles.html">Team Profiles</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div class="content">
