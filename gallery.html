@@ -23,14 +23,31 @@
             text-decoration: underline;}
     </style>
     <script>
+    var reverseSwitch=false;
+
       function showNav() {
-        document.getElementById("navdiv").classList.toggle("show");
-        document.getElementById("layer1").classList.toggle('open1-1');
-        document.getElementById("layer2").classList.toggle('open2-1');
-        document.getElementById("layer3").classList.toggle('open3-1');
-        setTimeout(function(){
-        document.getElementById('layer1').classList.toggle('open1-2');
-        document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+        if(reverseSwitch===true){
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');
+         setTimeout(function(){
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');}, 200);
+         reverseSwitch=false
+        }
+        else{
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');
+         setTimeout(function(){
+          document.getElementById('layer1').classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+         reverseSwitch=true
+        }
       }
     </script>
   </head>
@@ -91,6 +108,16 @@
             </a>
             <a class="session-link" href="gallery-entries/27-09-2016.html" target="_blank">
               <b>September 27, 2016<br />(30 pics)</b>
+            </a>
+          </div>
+
+          <!-- vv 04-10-2016 vv -->
+          <div class="session">
+            <a class="session-link" href="gallery-entries/04-10-2016.html" target="_blank">
+              <img src="pics/gallery-pics/04-10-2016/IMG_20161004_151907.jpg" alt="thumbnail" style="width:190px; padding:5px">
+            </a>
+            <a class="session-link" href="gallery-entries/04-10-2016.html" target="_blank">
+              <b>October 4, 2016<br />(21 pics)</b>
             </a>
           </div>
 

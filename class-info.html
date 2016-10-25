@@ -51,14 +51,31 @@
       }
     </style>
     <script>
+    var reverseSwitch=false;
+
       function showNav() {
-        document.getElementById("navdiv").classList.toggle("show");
-        document.getElementById("layer1").classList.toggle('open1-1');
-        document.getElementById("layer2").classList.toggle('open2-1');
-        document.getElementById("layer3").classList.toggle('open3-1');
-        setTimeout(function(){
-        document.getElementById('layer1').classList.toggle('open1-2');
-        document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+        if(reverseSwitch===true){
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');
+         setTimeout(function(){
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');}, 200);
+         reverseSwitch=false
+        }
+        else{
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');
+         setTimeout(function(){
+          document.getElementById('layer1').classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+         reverseSwitch=true
+        }
       }
     </script>
   </head>
@@ -85,21 +102,21 @@
       <li class="nav-li" id="nav-li"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
     </div>
-    <!--
+    
     <div class="warningborder">
       <div class="warningdiv">
       <p class="warningtext">
         <img src="pics/warning.png" alt="exclamation mark" class="leftexc">
         <img src="pics/warning.png" alt="exclamation mark" class="leftexc">
         <img src="pics/warning.png" alt="exclamation mark" class="leftexc">
-        As the season hasn't started yet most data is marked as "unknown"
+        New season, remember to sign up!
         <img src="pics/warning.png" alt="exclamation mark" class="rightexc">
         <img src="pics/warning.png" alt="exclamation mark" class="rightexc">
         <img src="pics/warning.png" alt="exclamation mark" class="rightexc">
       </p>
       </div>
     </div>
-    -->
+    
     <div class="info">
       <h2 class="info-header">Current Season</h2>
       <div class="info-box1">
@@ -114,11 +131,11 @@
       <div class="info-box2">
         <div class="info-box2-2">
         <h3 class="info-header-text2">Start Date</h3>
-        <p class="info-text2">tue 23rd aug 2016</p>
+        <p class="info-text2">tue 25rd oct 2016</p>
         </div>
         <div class="info-box2-2">
         <h3 class="info-header-text2">End Date</h3>
-        <p class="info-text2">tue 11th oct 2016</p>
+        <p class="info-text2">tue 13th dec 2016</p>
         </div>
       </div>
       <div class="info-box1">

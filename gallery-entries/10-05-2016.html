@@ -8,8 +8,6 @@
     <link rel="icon" type="image/x-icon" href="../pics/thumbnail-transparent.png">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><!-- used for icons -->
     <style>
-      .gallerypic {
-        min-width: 400px;}
       .slideshow-container {
         max-width: 1000px;
         position: relative;
@@ -49,16 +47,52 @@
         .active, .dot:hover {
           background-color: #5f5f5f;
           color: #f69220;}
+
+      @media only screen and (max-width: 768px) {
+        .prev, .next {
+          position: relative;
+          background-color: #bbb;
+          display: inline-block;
+          margin-top: 10px;
+        }
+        .prev {
+          border-radius: 5px 0 0 5px;
+        }
+        .next {
+          border-radius: 0 5px 5px 0;
+        }
+        .scroll-div {
+          width: 100%;
+          text-align: center;
+        }
+      }
     </style>
-    <script type="text/javascript">
+    <script>
+    var reverseSwitch=false;
+
       function showNav() {
-        document.getElementById("navdiv").classList.toggle("show");
-        document.getElementById("layer1").classList.toggle('open1-1');
-        document.getElementById("layer2").classList.toggle('open2-1');
-        document.getElementById("layer3").classList.toggle('open3-1');
-        setTimeout(function(){
-        document.getElementById('layer1').classList.toggle('open1-2');
-        document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+        if(reverseSwitch===true){
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');
+         setTimeout(function(){
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');}, 200);
+         reverseSwitch=false
+        }
+        else{
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');
+         setTimeout(function(){
+          document.getElementById('layer1').classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+         reverseSwitch=true
+        }
       }
     </script>
   </head>
@@ -233,8 +267,10 @@
         <img src="../pics/gallery-pics/10-05-2016/IMG_20160510_162145_010.jpg" style="width:100%" class="gallerypic">
       </div>
 
+    <div class="scroll-div">
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
     </div>
     <br>
 
