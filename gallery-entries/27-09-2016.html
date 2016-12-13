@@ -293,6 +293,16 @@
             dots[i].className = dots[i].className.replace(" active", "");}
         slides[slideIndex-1].style.display = "block"; 
         dots[slideIndex-1].className += " active";}
+
+      document.onkeydown=function(e) {
+        switch (e.keyCode) {
+        case 37:
+            plusSlides(-1);
+            break;
+        case 39:
+            plusSlides(1);
+            break;}
+      }
     </script>
   </body>
 </html>

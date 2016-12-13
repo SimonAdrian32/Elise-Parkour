@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>December 12, 2016 (slideshow) - Elise Parkour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../layout-styles.css" type="text/css" />
+    <link rel="stylesheet" href="slide-css.css" type="text/css" />
+    <link rel="icon" href="../pics/thumbnail-transparent.png" type="image/x-icon" >
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><!-- used for icons -->
+    <style>
+      @media only screen and (max-width: 768px) {
+        .prev, .next {
+          position: relative;
+          background-color: #bbb;
+          display: inline-block;
+          margin-top: 10px;
+        }
+        .prev {
+          border-radius: 5px 0 0 5px;
+        }
+        .next {
+          border-radius: 0 5px 5px 0;
+        }
+        .scroll-div {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+    <script>
+    var reverseSwitch=false;
+
+      function showNav() {
+        if(reverseSwitch===true){
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');
+         setTimeout(function(){
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');}, 200);
+         reverseSwitch=false
+        }
+        else{
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');
+         setTimeout(function(){
+          document.getElementById('layer1').classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+         reverseSwitch=true
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    <a class="logo" href="http://www.eliseparkour.com">
+      <img class="logo" 
+           src="../pics/logo.png"
+           alt="logo"
+           width="100%"
+           height="100px">
+    </a>
+    <div class="navdiv" id="navdiv">
+      <button type="button" class="nav-button" onclick="showNav()">
+        <span class="burger" id="layer1"></span>
+        <span class="burger" id="layer2"></span>
+        <span class="burger" id="layer3"></span>
+      </button>
+      <ul id="nav" class="nav-content">
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../what-is-parkour.html">What is parkour</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../class-info.html">Class info</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../team-profiles.html">Team Profiles</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../gallery.html">Gallery</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="slide">
+        <div class="numbertext">1 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(1).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">2 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(2).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">3 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(3).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">4 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(4).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">5 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(5).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">6 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(6).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">7 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(7).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">8 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(8).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">9 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(9).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">10 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(10).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">11 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(11).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">12 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(12).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">13 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(13).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">14 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(14).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">15 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(15).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">16 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(16).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">17 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(17).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">18 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(18).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">19 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(19).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">20 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(20).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">21 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(21).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">22 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(22).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">23 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(23).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">24 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(24).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">25 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(25).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">26 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(26).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">27 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(27).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">28 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(28).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">29 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(29).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">30 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(30).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">31 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(31).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">32 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(32).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">33 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(33).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">34 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(34).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">35 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(35).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">36 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(36).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">37 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(37).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">38 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(38).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">39 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(39).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">40 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(40).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">41 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(41).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">42 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(42).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">43 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(43).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">44 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(44).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">45 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(45).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">46 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(46).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">47 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(47).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">48 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(48).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">49 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(49).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">50 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(50).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">51 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(51).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">52 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(52).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">53 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(53).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">54 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(54).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">55 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(55).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">56 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(56).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">57 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(57).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">58 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(58).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">59 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(59).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">60 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(60).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">61 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(61).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">62 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(62).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">63 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(63).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">64 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(64).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">65 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(65).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">66 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(66).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">67 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(67).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">68 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(68).jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">69 / 69</div>
+        <img src="../pics/gallery-pics/06-12-2016/6dec(69).jpg" style="width:100%" class="gallerypic">
+      </div>
+
+    <div class="scroll-div">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" onkeydown="plusSlides(-1)">&#10095;</a>
+    </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" title="1" onclick="currentSlide(1)">1</span>
+      <span class="dot" title="2" onclick="currentSlide(2)">2</span>
+      <span class="dot" title="3" onclick="currentSlide(3)">3</span>
+      <span class="dot" title="4" onclick="currentSlide(4)">4</span>
+      <span class="dot" title="5" onclick="currentSlide(5)">5</span>
+      <span class="dot" title="6" onclick="currentSlide(6)">6</span>
+      <span class="dot" title="7" onclick="currentSlide(7)">7</span>
+      <span class="dot" title="8" onclick="currentSlide(8)">8</span>
+      <span class="dot" title="9" onclick="currentSlide(9)">9</span>
+      <span class="dot" title="10" onclick="currentSlide(10)">10</span>
+      <span class="dot" title="11" onclick="currentSlide(11)">11</span>
+      <span class="dot" title="12" onclick="currentSlide(12)">12</span>
+      <span class="dot" title="13" onclick="currentSlide(13)">13</span>
+      <span class="dot" title="14" onclick="currentSlide(14)">14</span>
+      <span class="dot" title="15" onclick="currentSlide(15)">15</span>
+      <span class="dot" title="16" onclick="currentSlide(16)">16</span>
+      <span class="dot" title="17" onclick="currentSlide(17)">17</span>
+      <span class="dot" title="18" onclick="currentSlide(18)">18</span>
+      <span class="dot" title="19" onclick="currentSlide(19)">19</span>
+      <span class="dot" title="20" onclick="currentSlide(20)">20</span>
+      <span class="dot" title="21" onclick="currentSlide(21)">21</span>
+      <span class="dot" title="22" onclick="currentSlide(22)">22</span>
+      <span class="dot" title="23" onclick="currentSlide(23)">23</span>
+      <span class="dot" title="24" onclick="currentSlide(24)">24</span>
+      <span class="dot" title="25" onclick="currentSlide(25)">25</span>
+      <span class="dot" title="26" onclick="currentSlide(26)">26</span>
+      <span class="dot" title="27" onclick="currentSlide(27)">27</span>
+      <span class="dot" title="28" onclick="currentSlide(28)">28</span>
+      <span class="dot" title="29" onclick="currentSlide(29)">29</span>
+      <span class="dot" title="30" onclick="currentSlide(30)">30</span>
+      <span class="dot" title="31" onclick="currentSlide(31)">31</span>
+      <span class="dot" title="32" onclick="currentSlide(32)">32</span>
+      <span class="dot" title="33" onclick="currentSlide(33)">33</span>
+      <span class="dot" title="34" onclick="currentSlide(34)">34</span>
+      <span class="dot" title="35" onclick="currentSlide(35)">35</span>
+      <span class="dot" title="36" onclick="currentSlide(36)">36</span>
+      <span class="dot" title="37" onclick="currentSlide(37)">37</span>
+      <span class="dot" title="38" onclick="currentSlide(38)">38</span>
+      <span class="dot" title="39" onclick="currentSlide(39)">39</span>
+      <span class="dot" title="40" onclick="currentSlide(40)">40</span>
+      <span class="dot" title="41" onclick="currentSlide(41)">41</span>
+      <span class="dot" title="42" onclick="currentSlide(42)">42</span>
+      <span class="dot" title="43" onclick="currentSlide(43)">43</span>
+      <span class="dot" title="44" onclick="currentSlide(44)">44</span>
+      <span class="dot" title="45" onclick="currentSlide(45)">45</span>
+      <span class="dot" title="46" onclick="currentSlide(46)">46</span>
+      <span class="dot" title="47" onclick="currentSlide(47)">47</span>
+      <span class="dot" title="48" onclick="currentSlide(48)">48</span>
+      <span class="dot" title="49" onclick="currentSlide(49)">49</span>
+      <span class="dot" title="50" onclick="currentSlide(50)">50</span>
+      <span class="dot" title="51" onclick="currentSlide(51)">51</span>
+      <span class="dot" title="52" onclick="currentSlide(52)">52</span>
+      <span class="dot" title="53" onclick="currentSlide(53)">53</span>
+      <span class="dot" title="54" onclick="currentSlide(54)">54</span>
+      <span class="dot" title="55" onclick="currentSlide(55)">55</span>
+      <span class="dot" title="56" onclick="currentSlide(56)">56</span>
+      <span class="dot" title="57" onclick="currentSlide(57)">57</span>
+      <span class="dot" title="58" onclick="currentSlide(58)">58</span>
+      <span class="dot" title="59" onclick="currentSlide(59)">59</span>
+      <span class="dot" title="60" onclick="currentSlide(60)">60</span>
+      <span class="dot" title="61" onclick="currentSlide(61)">61</span>
+      <span class="dot" title="62" onclick="currentSlide(62)">62</span>
+      <span class="dot" title="63" onclick="currentSlide(63)">63</span>
+      <span class="dot" title="64" onclick="currentSlide(64)">64</span>
+      <span class="dot" title="65" onclick="currentSlide(65)">65</span>
+      <span class="dot" title="66" onclick="currentSlide(66)">66</span>
+      <span class="dot" title="67" onclick="currentSlide(67)">67</span>
+      <span class="dot" title="68" onclick="currentSlide(68)">68</span>
+      <span class="dot" title="69" onclick="currentSlide(69)">69</span>
+    </div>
+
+        
+    <script>
+      var slideIndex = 1;
+        showSlides(slideIndex);
+    
+      function plusSlides(n) {
+        showSlides(slideIndex += n);}
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);}
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length} ;
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");}
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";}
+
+      document.onkeydown=function(e) {
+        switch (e.keyCode) {
+        case 37:
+            plusSlides(-1);
+            break;
+        case 39:
+            plusSlides(1);
+            break;}
+      }
+    </script>
+  </body>
+</html>
+<!-- made by Simon Adrian -->
