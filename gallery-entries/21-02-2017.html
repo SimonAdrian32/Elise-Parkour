@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>February 21, 2017 (slideshow) - Elise Parkour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../layout-styles.css" type="text/css" />
+    <link rel="stylesheet" href="slide-css.css" type="text/css" />
+    <link rel="icon" href="../pics/thumbnail-transparent.png" type="image/x-icon" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><!-- used for icons -->
+    <style>
+      @media only screen and (max-width: 768px) {
+        .prev, .next {
+          position: relative;
+          background-color: #bbb;
+          display: inline-block;
+          margin-top: 10px;
+        }
+        .prev {
+          border-radius: 5px 0 0 5px;
+        }
+        .next {
+          border-radius: 0 5px 5px 0;
+        }
+        .scroll-div {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+    <script src="https://gist.github.com/johan/2047491">/* script to ensure that double-tapping on mobile won't zoom in instead of clicking "next"*/
+      (function($) {
+  var IS_IOS = /iphone|ipad/i.test(navigator.userAgent);
+  $.fn.nodoubletapzoom = function() {
+    if (IS_IOS)
+      $(this).bind('touchstart', function preventZoom(e) {
+        var t2 = e.timeStamp
+          , t1 = $(this).data('lastTouch') || t2
+          , dt = t2 - t1
+          , fingers = e.originalEvent.touches.length;
+        $(this).data('lastTouch', t2);
+        if (!dt || dt > 500 || fingers > 1) return; // not double-tap
+
+        e.preventDefault(); // double tap - prevent the zoom
+        // also synthesize click events we just swallowed up
+        $(this).trigger('click').trigger('click');
+      });
+  };
+})(jQuery);
+    </script>
+    <script>
+    var reverseSwitch=false;
+
+      function showNav() {
+        if(reverseSwitch===true){
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');
+         setTimeout(function(){
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');}, 200);
+         reverseSwitch=false
+        }
+        else{
+          console.log(reverseSwitch)
+          document.getElementById("navdiv").classList.toggle("show");
+          document.getElementById("layer1").classList.toggle('open1-1');
+          document.getElementById("layer2").classList.toggle('open2-1');
+          document.getElementById("layer3").classList.toggle('open3-1');
+         setTimeout(function(){
+          document.getElementById('layer1').classList.toggle('open1-2');
+          document.getElementById('layer3').classList.toggle('open3-2');}, 200);
+         reverseSwitch=true
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    <a class="logo" href="http://www.eliseparkour.com">
+      <img class="logo" 
+           src="../pics/logo.png"
+           alt="logo"
+           width="100%"
+           height="100px">
+    </a>
+    <div class="navdiv" id="navdiv">
+      <button type="button" class="nav-button" onclick="showNav()">
+        <span class="burger" id="layer1"></span>
+        <span class="burger" id="layer2"></span>
+        <span class="burger" id="layer3"></span>
+      </button>
+      <ul id="nav" class="nav-content">
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="http://www.eliseparkour.com">Home</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../what-is-parkour.html">What is parkour</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../class-info.html">Class info</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../team-profiles.html">Team Profiles</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../gallery.html">Gallery</a></li>
+        <li class="nav-li" id="nav-li"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="slide">
+        <div class="numbertext">1 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7730.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">2 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7732.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">3 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7733.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">4 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7736.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">5 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7737.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">6 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7741.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">7 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7743.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">8 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7747.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">9 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7749.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">10 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7751.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">11 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7752.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">12 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7754.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">13 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7755.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">14 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7758.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">15 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7760.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">16 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7761.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">17 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7765.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">18 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7768.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">19 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7769.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">20 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7770.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">21 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7771.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">22 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7774.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">23 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7777.jpg" style="width:100%" class="gallerypic">
+      </div>
+    
+      <div class="slide">
+        <div class="numbertext">24 / 24</div>
+        <img src="../pics/gallery-pics/21-02-2017/IMG_7779.jpg" style="width:100%" class="gallerypic">
+      </div>
+
+    <div class="scroll-div">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" onkeydown="plusSlides(-1)">&#10095;</a>
+    </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" title="1" onclick="currentSlide(1)">1</span>
+      <span class="dot" title="2" onclick="currentSlide(2)">2</span>
+      <span class="dot" title="3" onclick="currentSlide(3)">3</span>
+      <span class="dot" title="4" onclick="currentSlide(4)">4</span>
+      <span class="dot" title="5" onclick="currentSlide(5)">5</span>
+      <span class="dot" title="6" onclick="currentSlide(6)">6</span>
+      <span class="dot" title="7" onclick="currentSlide(7)">7</span>
+      <span class="dot" title="8" onclick="currentSlide(8)">8</span>
+      <span class="dot" title="9" onclick="currentSlide(9)">9</span>
+      <span class="dot" title="10" onclick="currentSlide(10)">10</span>
+      <span class="dot" title="11" onclick="currentSlide(11)">11</span>
+      <span class="dot" title="12" onclick="currentSlide(12)">12</span>
+      <span class="dot" title="13" onclick="currentSlide(13)">13</span>
+      <span class="dot" title="14" onclick="currentSlide(14)">14</span>
+      <span class="dot" title="15" onclick="currentSlide(15)">15</span>
+      <span class="dot" title="16" onclick="currentSlide(16)">16</span>
+      <span class="dot" title="17" onclick="currentSlide(17)">17</span>
+      <span class="dot" title="18" onclick="currentSlide(18)">18</span>
+      <span class="dot" title="19" onclick="currentSlide(19)">19</span>
+      <span class="dot" title="20" onclick="currentSlide(20)">20</span>
+      <span class="dot" title="21" onclick="currentSlide(21)">21</span>
+      <span class="dot" title="22" onclick="currentSlide(22)">22</span>
+      <span class="dot" title="23" onclick="currentSlide(23)">23</span>
+      <span class="dot" title="24" onclick="currentSlide(24)">24</span>
+    </div>
+
+        
+    <script>
+      var slideIndex = 1;
+        showSlides(slideIndex);
+    
+      function plusSlides(n) {
+        showSlides(slideIndex += n);}
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);}
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length} ;
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");}
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";}
+
+      document.onkeydown=function(e) {
+        switch (e.keyCode) {
+        case 37:
+            plusSlides(-1);
+            break;
+        case 39:
+            plusSlides(1);
+            break;}
+      }
+    </script>
+  </body>
+</html>
+<!-- made by Simon Adrian -->
